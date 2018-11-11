@@ -14,7 +14,181 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </head>
+<stlye>
+    body {
+    background-color: var(--dark);
+    font-size: 32px, 22px, 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
 
+:root {
+    --primary: #2C2F31;
+    --titleheads: #afbdc4;
+    --dark: #385360;
+    --text: #000000;
+    --highlights: #53baff;
+    --searchbar: #a2bfd3;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    z-index: 1;
+    position: static;
+    top: 100%;
+    left: 0%;
+    transform: translate(-0%, -10%);
+    padding-top: 30px;
+    height: 60px;
+    width: 100%;
+    background: var(--primary);
+    color: var(--text);
+}
+
+nav .navbar {
+    display: inline;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 40px 0 20px;
+}
+
+header li {
+    color: var(--titleheads);
+    font-size: 38px;
+}
+
+header li .signinicon {
+    -webkit-transition: all 0.4s ease-in-out;
+    color: var(--titleheads);
+}
+
+header li .current {
+    -webkit-transition: all 0.4s ease-in-out;
+    color: var(--titleheads);
+}
+
+.current:hover {
+    color: #96b7c7;
+    font-size: 40px;
+    -webkit-transition: font-size 0.2s ease-in-out;
+    transition: font-size 0.2s ease-in-out;
+}
+
+header .signinicon:hover {
+    -webkit-transition: font-size 0.3s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
+    color: #96b7c7;
+    font-size: 40px;
+    transition: 0.25s;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header .navbar {
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+header h1 {
+    color: var(--titleheads);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*searchbar*/
+
+.searchbar {
+    margin-bottom: 0;
+    position: relative;
+    top: 0%;
+    left: 30%;
+    transform: franslate(-50%, -50%);
+}
+
+.search-box-input {
+    margin-top: 5px;
+    text-align: left;
+    font-size: 18px;
+    border: 0.2em solid #e9e9e9;
+    border-radius: 0.4em 0 0 0.6em;
+    height: 20px;
+    width: 80px;
+    background: #ffffffe3;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.search-box-input:hover {
+    color: var(--text);
+    border-color: none;
+    background-color: #dee5e9;
+    opacity: 0.7;
+}
+
+.search-box-input:focus {
+    transition: 0.25s;
+    color: rgb(32, 33, 34);
+    background-color: #ffffffe3;
+    border-color: var(--searchbar);
+    border-radius: 5px 0.3em 6px 0.3em;
+    transition: 0.50s;
+    font-size: 20px;
+    height: 21px;
+    width: 160px;
+}
+
+.search-box-input:active {
+    background-color: #96b7c7;
+    color: black;
+}
+
+form button {
+    margin-top: 2px;
+    border-right: 0 transparent;
+    background-color: transparent;
+    color: var(--titleheads);
+    font-size: 22px;
+    float: left;
+    border: 0.2em solid transparent;
+    height: 25px;
+    width: 60px;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+form button:hover {
+    color: #96b7c7;
+    font-size: 24px;
+    height: 30px;
+    width: 75px;
+}
+
+form button:active {
+    transition-delay: 0.50ms;
+    color: slateblue;
+}
+    </style>
 <body>
     <header>
         <div class="container">
