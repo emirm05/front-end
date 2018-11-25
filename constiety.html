@@ -2,97 +2,61 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Social media design">
-    <meta name="keywords" content="web design, affordable web design, professional web design">
-    <meta name="author" content="Brad Traversy">
-    <title>Constiety | Welcome</title>
-    <link rel="stylesheet" href="./css/Constiety.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Constiety.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="main.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('header').addClass('black');
+
+            } else {
+                $('header').removeClass('black');
+            }
+        })
+    </script>
 </head>
+
 
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Constiety</h1>
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li>
 
-                        <a href="Constiety.html" class="current"><i class="material-icons">home</i></a>
-                    </li>
-                    <li>
-                        <a href="login.html" class="signinicon"><i class="fas fa-sign-in-alt"></i></a>
-                    </li>
-                </ul>
-            </nav>
-            <form class="searchbar" action="" method="POST">
-                <input type="text" placeholder="Search.... " class="search-box-input" />
-                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+        <a href="Constiety.html" class="titlehead">
+            <h1>Constiety</h1>
+        </a>
 
 
-            </form>
-        </div>
+        <form action="" method="POST" class="searchbarstyle">
+            <input type="text" id="" class="searchbar" placeholder="Search...">
+            <button class="sbarbuttonstyle" id="" type="submit" style="float: left"><i class="fas fa-search" aria-hidden="true"></i></button>
+
+        </form>
+        <ol>
+            <li>
+                <a href="Constiety.html" class="home">Home</a>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <a href="Constiety.html" class="Join">Join</a>
+            </li>
+            <li>
+                <a href="login.html" class="login">Log In</a>
+            </li>
+        </ul>
     </header>
+    <nav class="nav">
+
+        <button class="buttonstyle"><i class="fas fa-align-left"></i></button>
+    </nav>
+
+    <main>
+
+    </main>
 
 
-    <section class="thewholecase">
-        <article class="thesecond">
-            <div class="posting">
-                <div class="comment-section">
-
-
-                </div>
-
-                <a href="#"><img class="img-" src="https://picsum.photos/200/300/?random" alt="postimg"></a>
-                <form class="commentingg" action="" method="POST">
-                    <textarea aria-label="Add a comment…" placeholder="Add a comment…" autocomplete="off" autocorrect="off"></textarea>
-                    <a href=""><button class="sendbutton">Send</button></a>
-
-                </form>
-                <div class="post-case-header">
-                    <div id="posttext">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
-                    </div>
-                    <nav class="nav">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <h1 class="username">username</h1>
-                                </a>
-
-                            </li>
-
-                            <li>
-                                <a href="#" class="pppage"><img class="avatar" src="./source/highlight4.jpeg" alt="#"></a>
-
-
-                            </li>
-                        </ul>
-
-                    </nav>
-
-                </div>
-                </a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        </article>
-    </section>
-    <footer class="footer" align="bottom">
-
-        <p>Tüm hakları saklıdır 2018 &copy;Constiety</p>
-    </footer>
 </body>
-
 
 </html>
